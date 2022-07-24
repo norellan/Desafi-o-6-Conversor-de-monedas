@@ -1,0 +1,123 @@
+.cont-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(24, 25, 29);
+}
+
+.cont-calculo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  width: 50%;
+  height: 90%;
+  margin: 3vh 25vh 0vh 25vh;
+}
+
+.form-titulo {
+  flex: auto;
+  color: white;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: underline;
+  text-decoration-color: rgb(103, 118, 121);
+}
+
+.form-texto {
+  color: white;
+  font-size: large;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.form-input {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1vh;
+  width: 60%;
+  height: 4vh;
+  border: solid 1px black;
+  text-align: center;
+}
+
+.form-b {
+  background-color: aqua;
+  border-radius: 1vh;
+  width: 50%;
+  height: 5vh;
+  margin: 3vh;
+  border: solid 1px black;
+}
+
+.cont-grafica {
+  background-color: rgb(14, 13, 13);
+  width: 90%;
+  height: 90%;
+  margin: 5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .cont-calculo {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-texto {
+    font-size: x-large;
+  }
+
+  .form-input {
+    width: 60%;
+    height: 6vh;
+    font-size: medium;
+  }
+
+  .form-b {
+    height: 6vh;
+    font-size: medium;
+  }
+
+  .cont-grafica {
+    background-color: rgb(24, 25, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .cont-calculo {
+    width: 40%;
+    height: 90%;
+    margin: 3vh 42vh 0vh 60vh;
+  }
+
+  .form-texto {
+    font-size: x-large;
+  }
+
+  .form-input {
+    width: 60%;
+    height: 6vh;
+    font-size: medium;
+    font-style: black;
+  }
+
+  .btn {
+    flex: auto;
+    margin-top: 4%;
+  }
+
+  .cont-grafica {
+    background-color: rgb(24, 25, 29);
+    width: 50%;
+    height: 90%;
+    margin: 5vh 50vh 5vh 50vh;
+    align-items: center;
+  }
+}

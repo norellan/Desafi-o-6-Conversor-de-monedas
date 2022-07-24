@@ -1,0 +1,59 @@
+gi<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Conversor de Monedas</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="cont-general">
+        <h2 class="form-titulo">Conversor de Monedas Nacional</h2>
+        <div class="cont-calculo">
+          <p class="form-texto">Pesos CLP</p>
+          <input
+            class="form-input"
+            type="number"
+            id="pesos"
+            placeholder="Ingrese el monto"
+          />
+          <p class="form-texto">Moneda a convertir:</p>
+          <select
+            class="form-input"
+            id="select-monedas"
+            onchange="selectMonedas()"
+          >
+            <option value="dolar">Elija una moneda</option>
+            <option id="dolar" value="dolar">Dolar</option>
+            <option id="euro" value="euro">Euro</option>
+            <option id="uf" value="uf">UF</option>
+          </select>
+          <button class="btn btn-info" type="button" onclick="calcular()">
+            Calcular
+          </button>
+          <p class="form-texto" id="resultado">....</p>
+        </div>
+        <div class="cont-grafica" id="stylegrafica">
+          <canvas id="grafica" style="width: 100%; max-width: 600px"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </body>
+</html>
